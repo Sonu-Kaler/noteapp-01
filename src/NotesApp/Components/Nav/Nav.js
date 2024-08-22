@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { clearUser } from "../../Redux/Slices/UserSlice";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Nav=()=>{
 
@@ -19,7 +19,9 @@ const Nav=()=>{
         <div>
             <div className="navbar">
                 <p className="logo">
+                    <NavLink to="/" style={{textDecoration:"none"}}> 
                     MakeNote
+                    </NavLink>
                 </p>
                
 
